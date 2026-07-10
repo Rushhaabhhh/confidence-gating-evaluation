@@ -1,0 +1,16 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Experiment dependencies — needed only to run NEW model elicitation runs.
+# Install with: pip install -r requirements-experiments.txt
+# ─────────────────────────────────────────────────────────────────────────────
+-r requirements.txt
+
+# Dataset loading (HuggingFace)
+datasets>=2.19.0
+huggingface_hub>=0.20   # installed automatically with datasets
+
+# HTTP client — Groq / OpenRouter / NVIDIA NIM / OpenAI backends
+requests>=2.31.0
+
+# Gemini backend — try new SDK first, fall back to legacy
+google-genai>=0.3.0                 # new unified SDK (preferred)
+# google-generativeai>=0.5.0        # legacy SDK (fallback, auto-used if google-genai absent)

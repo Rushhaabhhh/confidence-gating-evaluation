@@ -1,0 +1,102 @@
+{
+  "stem": "results_llama31_8b",
+  "domains": {
+    "swebench": {
+      "by_difficulty": [
+        {
+          "stratum": "15 min - 1 hour",
+          "n": 82,
+          "accuracy": 0.34146341463414637,
+          "mean_confidence": 0.7890243902439023,
+          "gap": 0.4475609756097559
+        },
+        {
+          "stratum": "1-4 hours",
+          "n": 18,
+          "accuracy": 0.5555555555555556,
+          "mean_confidence": 0.7666666666666667,
+          "gap": 0.21111111111111114
+        },
+        {
+          "stratum": "<15 min fix",
+          "n": 50,
+          "accuracy": 0.76,
+          "mean_confidence": 0.8239999999999997,
+          "gap": 0.06399999999999972
+        }
+      ],
+      "by_repo": [
+        {
+          "stratum": "astropy",
+          "n": 5,
+          "accuracy": 0.0,
+          "mean_confidence": 0.8,
+          "gap": 0.8
+        },
+        {
+          "stratum": "pylint-dev",
+          "n": 4,
+          "accuracy": 0.25,
+          "mean_confidence": 0.8,
+          "gap": 0.55
+        },
+        {
+          "stratum": "sympy",
+          "n": 25,
+          "accuracy": 0.32,
+          "mean_confidence": 0.8200000000000002,
+          "gap": 0.5000000000000002
+        },
+        {
+          "stratum": "matplotlib",
+          "n": 11,
+          "accuracy": 0.45454545454545453,
+          "mean_confidence": 0.8272727272727274,
+          "gap": 0.37272727272727285
+        },
+        {
+          "stratum": "scikit-learn",
+          "n": 7,
+          "accuracy": 0.42857142857142855,
+          "mean_confidence": 0.7714285714285714,
+          "gap": 0.3428571428571428
+        },
+        {
+          "stratum": "django",
+          "n": 68,
+          "accuracy": 0.5588235294117647,
+          "mean_confidence": 0.789705882352941,
+          "gap": 0.23088235294117632
+        },
+        {
+          "stratum": "pydata",
+          "n": 5,
+          "accuracy": 0.6,
+          "mean_confidence": 0.76,
+          "gap": 0.16000000000000003
+        },
+        {
+          "stratum": "psf",
+          "n": 6,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.7999999999999999,
+          "gap": 0.1333333333333333
+        },
+        {
+          "stratum": "sphinx-doc",
+          "n": 14,
+          "accuracy": 0.7142857142857143,
+          "mean_confidence": 0.8,
+          "gap": 0.08571428571428574
+        },
+        {
+          "stratum": "pytest-dev",
+          "n": 5,
+          "accuracy": 0.8,
+          "mean_confidence": 0.8,
+          "gap": 0.0
+        }
+      ]
+    }
+  }
+}

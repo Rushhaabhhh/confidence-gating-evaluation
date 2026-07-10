@@ -1,0 +1,14 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Core analysis — needed to reproduce all results from committed data.
+# Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Numerics & calibration
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+netcal>=1.3.0           # post-hoc calibration (temperature/Platt/isotonic)
+                        # auto-fallback to sklearn/scipy if unavailable
+
+# Visualisation
+matplotlib>=3.7.0

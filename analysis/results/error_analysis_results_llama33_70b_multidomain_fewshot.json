@@ -1,0 +1,166 @@
+{
+  "stem": "results_llama33_70b_multidomain_fewshot",
+  "domains": {
+    "gsm8k": {
+      "by_length_quartile": [
+        {
+          "stratum": "Q3",
+          "n": 59,
+          "accuracy": 0.6271186440677966,
+          "mean_confidence": 0.9661016949152541,
+          "gap": 0.3389830508474575
+        },
+        {
+          "stratum": "Q1 (shortest)",
+          "n": 60,
+          "accuracy": 0.6333333333333333,
+          "mean_confidence": 0.9716666666666668,
+          "gap": 0.3383333333333335
+        },
+        {
+          "stratum": "Q4 (longest)",
+          "n": 60,
+          "accuracy": 0.6333333333333333,
+          "mean_confidence": 0.9691666666666666,
+          "gap": 0.3358333333333333
+        },
+        {
+          "stratum": "Q2",
+          "n": 60,
+          "accuracy": 0.65,
+          "mean_confidence": 0.968,
+          "gap": 0.31799999999999995
+        }
+      ]
+    },
+    "mmlu": {
+      "by_subject": [
+        {
+          "stratum": "professional_law",
+          "n": 12,
+          "accuracy": 0.5,
+          "mean_confidence": 0.8833333333333334,
+          "gap": 0.3833333333333334
+        },
+        {
+          "stratum": "international_law",
+          "n": 12,
+          "accuracy": 0.75,
+          "mean_confidence": 0.8500000000000002,
+          "gap": 0.1000000000000002
+        },
+        {
+          "stratum": "jurisprudence",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.8375,
+          "gap": -0.07916666666666661
+        },
+        {
+          "stratum": "medical_genetics",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.9116666666666667,
+          "gap": -0.004999999999999893
+        }
+      ]
+    },
+    "swebench": {
+      "by_difficulty": [
+        {
+          "stratum": "<15 min fix",
+          "n": 91,
+          "accuracy": 0.31868131868131866,
+          "mean_confidence": 0.8098901098901098,
+          "gap": 0.49120879120879113
+        },
+        {
+          "stratum": "1-4 hours",
+          "n": 18,
+          "accuracy": 0.9444444444444444,
+          "mean_confidence": 0.827777777777778,
+          "gap": -0.11666666666666647
+        },
+        {
+          "stratum": "15 min - 1 hour",
+          "n": 141,
+          "accuracy": 0.8581560283687943,
+          "mean_confidence": 0.8092198581560281,
+          "gap": -0.048936170212766195
+        }
+      ],
+      "by_repo": [
+        {
+          "stratum": "sphinx-doc",
+          "n": 22,
+          "accuracy": 0.4090909090909091,
+          "mean_confidence": 0.8045454545454547,
+          "gap": 0.39545454545454556
+        },
+        {
+          "stratum": "astropy",
+          "n": 6,
+          "accuracy": 1.0,
+          "mean_confidence": 0.8166666666666668,
+          "gap": -0.18333333333333324
+        },
+        {
+          "stratum": "django",
+          "n": 116,
+          "accuracy": 0.646551724137931,
+          "mean_confidence": 0.8155172413793104,
+          "gap": 0.16896551724137931
+        },
+        {
+          "stratum": "sympy",
+          "n": 36,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.8083333333333333,
+          "gap": 0.14166666666666672
+        },
+        {
+          "stratum": "matplotlib",
+          "n": 18,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.8055555555555557,
+          "gap": 0.13888888888888906
+        },
+        {
+          "stratum": "pytest-dev",
+          "n": 9,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.8,
+          "gap": 0.13333333333333341
+        },
+        {
+          "stratum": "pydata",
+          "n": 10,
+          "accuracy": 0.9,
+          "mean_confidence": 0.8099999999999999,
+          "gap": -0.09000000000000008
+        },
+        {
+          "stratum": "scikit-learn",
+          "n": 21,
+          "accuracy": 0.7619047619047619,
+          "mean_confidence": 0.8047619047619049,
+          "gap": 0.04285714285714304
+        },
+        {
+          "stratum": "psf",
+          "n": 5,
+          "accuracy": 0.8,
+          "mean_confidence": 0.82,
+          "gap": 0.019999999999999907
+        },
+        {
+          "stratum": "pylint-dev",
+          "n": 5,
+          "accuracy": 0.8,
+          "mean_confidence": 0.8,
+          "gap": 0.0
+        }
+      ]
+    }
+  }
+}

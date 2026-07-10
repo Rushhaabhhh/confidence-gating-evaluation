@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+venv/
+.venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# LaTeX build artefacts (paper source + PDF are committed; these are not)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/paper.html
+
+# Data formats we don't commit
+*.parquet
+
+# Private / large binaries
+literature/
+*.zip
+
+# Generated outputs — reproduced by running reproduce_all.sh or verify_claims.sh
+# (figures and analysis/results are committed as reference; audit/results are not)
+audit/results/

@@ -1,0 +1,282 @@
+{
+  "stem": "results_llama33_70b_multidomain",
+  "domains": {
+    "gsm8k": {
+      "by_length_quartile": [
+        {
+          "stratum": "Q1 (shortest)",
+          "n": 63,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.9952380952380953,
+          "gap": 0.3285714285714286
+        },
+        {
+          "stratum": "Q4 (longest)",
+          "n": 62,
+          "accuracy": 0.6612903225806451,
+          "mean_confidence": 0.9790322580645162,
+          "gap": 0.3177419354838711
+        },
+        {
+          "stratum": "Q3",
+          "n": 61,
+          "accuracy": 0.6885245901639344,
+          "mean_confidence": 0.9819672131147541,
+          "gap": 0.2934426229508197
+        },
+        {
+          "stratum": "Q2",
+          "n": 61,
+          "accuracy": 0.7540983606557377,
+          "mean_confidence": 0.9885245901639345,
+          "gap": 0.2344262295081968
+        }
+      ]
+    },
+    "mmlu": {
+      "by_subject": [
+        {
+          "stratum": "high_school_mathematics",
+          "n": 12,
+          "accuracy": 0.3333333333333333,
+          "mean_confidence": 0.9499999999999998,
+          "gap": 0.6166666666666665
+        },
+        {
+          "stratum": "professional_law",
+          "n": 12,
+          "accuracy": 0.5,
+          "mean_confidence": 0.8916666666666667,
+          "gap": 0.3916666666666667
+        },
+        {
+          "stratum": "clinical_knowledge",
+          "n": 12,
+          "accuracy": 0.5,
+          "mean_confidence": 0.8875000000000002,
+          "gap": 0.3875000000000002
+        },
+        {
+          "stratum": "college_chemistry",
+          "n": 12,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.8791666666666668,
+          "gap": 0.21250000000000013
+        },
+        {
+          "stratum": "formal_logic",
+          "n": 12,
+          "accuracy": 0.75,
+          "mean_confidence": 0.9291666666666667,
+          "gap": 0.1791666666666667
+        },
+        {
+          "stratum": "econometrics",
+          "n": 12,
+          "accuracy": 0.75,
+          "mean_confidence": 0.8916666666666667,
+          "gap": 0.14166666666666672
+        },
+        {
+          "stratum": "philosophy",
+          "n": 12,
+          "accuracy": 1.0,
+          "mean_confidence": 0.8625000000000002,
+          "gap": -0.13749999999999984
+        },
+        {
+          "stratum": "international_law",
+          "n": 12,
+          "accuracy": 0.75,
+          "mean_confidence": 0.8750000000000001,
+          "gap": 0.1250000000000001
+        },
+        {
+          "stratum": "astronomy",
+          "n": 12,
+          "accuracy": 0.8333333333333334,
+          "mean_confidence": 0.945,
+          "gap": 0.11166666666666658
+        },
+        {
+          "stratum": "high_school_macroeconomics",
+          "n": 12,
+          "accuracy": 0.8333333333333334,
+          "mean_confidence": 0.9291666666666667,
+          "gap": 0.09583333333333333
+        },
+        {
+          "stratum": "high_school_world_history",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.8458333333333335,
+          "gap": -0.07083333333333308
+        },
+        {
+          "stratum": "computer_security",
+          "n": 12,
+          "accuracy": 0.8333333333333334,
+          "mean_confidence": 0.9,
+          "gap": 0.06666666666666665
+        },
+        {
+          "stratum": "jurisprudence",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.8500000000000001,
+          "gap": -0.06666666666666654
+        },
+        {
+          "stratum": "machine_learning",
+          "n": 12,
+          "accuracy": 0.8333333333333334,
+          "mean_confidence": 0.8916666666666669,
+          "gap": 0.05833333333333357
+        },
+        {
+          "stratum": "moral_disputes",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.875,
+          "gap": -0.04166666666666663
+        },
+        {
+          "stratum": "nutrition",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.8875000000000001,
+          "gap": -0.029166666666666563
+        },
+        {
+          "stratum": "moral_scenarios",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.9408333333333334,
+          "gap": 0.02416666666666678
+        },
+        {
+          "stratum": "high_school_biology",
+          "n": 11,
+          "accuracy": 0.9090909090909091,
+          "mean_confidence": 0.9045454545454547,
+          "gap": -0.004545454545454408
+        },
+        {
+          "stratum": "medical_genetics",
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.9208333333333334,
+          "gap": 0.004166666666666763
+        }
+      ]
+    },
+    "swebench": {
+      "by_difficulty": [
+        {
+          "stratum": "<15 min fix",
+          "n": 91,
+          "accuracy": 0.18681318681318682,
+          "mean_confidence": 0.8318681318681319,
+          "gap": 0.6450549450549451
+        },
+        {
+          "stratum": "1-4 hours",
+          "n": 18,
+          "accuracy": 0.9444444444444444,
+          "mean_confidence": 0.8555555555555556,
+          "gap": -0.0888888888888888
+        },
+        {
+          "stratum": "15 min - 1 hour",
+          "n": 141,
+          "accuracy": 0.9148936170212766,
+          "mean_confidence": 0.8375886524822694,
+          "gap": -0.07730496453900715
+        }
+      ],
+      "by_repo": [
+        {
+          "stratum": "psf",
+          "n": 5,
+          "accuracy": 0.2,
+          "mean_confidence": 0.82,
+          "gap": 0.6199999999999999
+        },
+        {
+          "stratum": "sphinx-doc",
+          "n": 22,
+          "accuracy": 0.36363636363636365,
+          "mean_confidence": 0.8272727272727274,
+          "gap": 0.46363636363636374
+        },
+        {
+          "stratum": "django",
+          "n": 116,
+          "accuracy": 0.646551724137931,
+          "mean_confidence": 0.8551724137931036,
+          "gap": 0.20862068965517255
+        },
+        {
+          "stratum": "astropy",
+          "n": 6,
+          "accuracy": 1.0,
+          "mean_confidence": 0.8333333333333334,
+          "gap": -0.16666666666666663
+        },
+        {
+          "stratum": "sympy",
+          "n": 36,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.825,
+          "gap": 0.15833333333333333
+        },
+        {
+          "stratum": "pytest-dev",
+          "n": 9,
+          "accuracy": 0.6666666666666666,
+          "mean_confidence": 0.8,
+          "gap": 0.13333333333333341
+        },
+        {
+          "stratum": "scikit-learn",
+          "n": 21,
+          "accuracy": 0.7142857142857143,
+          "mean_confidence": 0.823809523809524,
+          "gap": 0.10952380952380969
+        },
+        {
+          "stratum": "pydata",
+          "n": 10,
+          "accuracy": 0.9,
+          "mean_confidence": 0.8100000000000002,
+          "gap": -0.08999999999999986
+        },
+        {
+          "stratum": "matplotlib",
+          "n": 18,
+          "accuracy": 0.7222222222222222,
+          "mean_confidence": 0.8111111111111112,
+          "gap": 0.08888888888888902
+        },
+        {
+          "stratum": "pylint-dev",
+          "n": 5,
+          "accuracy": 0.8,
+          "mean_confidence": 0.82,
+          "gap": 0.019999999999999907
+        }
+      ]
+    },
+    "truthfulqa": {
+      "by_category": [
+        {
+          "stratum": "",
+          "n": 250,
+          "accuracy": 0.884,
+          "mean_confidence": 0.9690799999999999,
+          "gap": 0.08507999999999993
+        }
+      ]
+    }
+  }
+}

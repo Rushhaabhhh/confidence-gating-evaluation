@@ -1,0 +1,150 @@
+{
+  "lift_llama70b_gsm8k_vs_swebench": {
+    "lift_a": 2.86,
+    "lift_b": 1.0344827586206897,
+    "delta": 1.8255172413793102,
+    "ci95": [
+      -0.7819254551700447,
+      0.7850458860759495
+    ],
+    "p_value": 0.0,
+    "n_perm": 10000
+  },
+  "lift_llama70b_mmlu_vs_swebench": {
+    "lift_a": 2.0561594202898554,
+    "lift_b": 1.0344827586206897,
+    "delta": 1.0216766616691657,
+    "ci95": [
+      -0.9361243544467232,
+      0.9097746148290796
+    ],
+    "p_value": 0.0135,
+    "n_perm": 10000
+  },
+  "lift_llama70b_truthfulqa_vs_swebench": {
+    "lift_a": 2.4137931034482762,
+    "lift_b": 1.0344827586206897,
+    "delta": 1.3793103448275865,
+    "ci95": [
+      -1.0840831244778615,
+      1.06061484397469
+    ],
+    "p_value": 0.009,
+    "n_perm": 10000
+  },
+  "auc_rc_llama70b_gsm8k_vs_swebench": {
+    "auc_a": 0.788149524616997,
+    "auc_b": 0.6759981229965608,
+    "delta": 0.11215140162043624,
+    "ci95": [
+      -0.019345379206968046,
+      0.20393326201549036
+    ],
+    "p_value": 0.0485
+  },
+  "mcnemar_llama70b_vs_gemini_swebench": {
+    "n_matched": 250,
+    "acc_llama": 0.652,
+    "acc_gemini": 0.66,
+    "delta": -0.008000000000000007,
+    "p_value": 0.8989402980321263
+  },
+  "ece_reduction": {
+    "Llama-70B_gsm8k": {
+      "raw_ece": 0.2939271255060728,
+      "best_ece": 0.02205727037864043,
+      "reduction": 0.2718698551274324,
+      "reduction_pct": 92.49566696484273,
+      "raw_ece_ci95": [
+        0.24048582995951417,
+        0.3510222672064776
+      ],
+      "significant": true,
+      "method": "isotonic"
+    },
+    "Llama-70B_mmlu": {
+      "raw_ece": 0.11268722466960368,
+      "best_ece": 0.035835822660061134,
+      "reduction": 0.07685140200954255,
+      "reduction_pct": 68.19885948462132,
+      "raw_ece_ci95": [
+        0.061931718061674086,
+        0.1671850220264319
+      ],
+      "significant": true,
+      "method": "isotonic"
+    },
+    "Llama-70B_swebench": {
+      "raw_ece": 0.20080000000000003,
+      "best_ece": 0.008591322250599387,
+      "reduction": 0.19220867774940065,
+      "reduction_pct": 95.72145306245051,
+      "raw_ece_ci95": [
+        0.14397999999999997,
+        0.25680000000000003
+      ],
+      "significant": true,
+      "method": "platt"
+    },
+    "Llama-70B_truthfulqa": {
+      "raw_ece": 0.08908,
+      "best_ece": 0.07223715434921285,
+      "reduction": 0.016842845650787155,
+      "reduction_pct": 18.907550124368157,
+      "raw_ece_ci95": [
+        0.05959700000000011,
+        0.13066499999999992
+      ],
+      "significant": false,
+      "method": "isotonic"
+    },
+    "Gemini_gsm8k": {
+      "raw_ece": 0.43999999999999995,
+      "best_ece": 0.0,
+      "reduction": 0.43999999999999995,
+      "reduction_pct": 100.0,
+      "raw_ece_ci95": [
+        0.376,
+        0.5
+      ],
+      "significant": true,
+      "method": "isotonic"
+    },
+    "Gemini_mmlu": {
+      "raw_ece": 0.06399122807017543,
+      "best_ece": 0.017805016953830466,
+      "reduction": 0.046186211116344966,
+      "reduction_pct": 72.17584739223203,
+      "raw_ece_ci95": [
+        0.025833333333333455,
+        0.10465021929824565
+      ],
+      "significant": true,
+      "method": "platt"
+    },
+    "Gemini_swebench": {
+      "raw_ece": 0.16859999999999997,
+      "best_ece": 0.024163806389979142,
+      "reduction": 0.14443619361002083,
+      "reduction_pct": 85.66796774022589,
+      "raw_ece_ci95": [
+        0.1194,
+        0.2338049999999999
+      ],
+      "significant": true,
+      "method": "platt"
+    },
+    "Gemini_truthfulqa": {
+      "raw_ece": 0.0784,
+      "best_ece": 0.00037502194399942465,
+      "reduction": 0.07802497805600057,
+      "reduction_pct": 99.5216556836742,
+      "raw_ece_ci95": [
+        0.04479999999999997,
+        0.11519999999999989
+      ],
+      "significant": true,
+      "method": "platt"
+    }
+  }
+}

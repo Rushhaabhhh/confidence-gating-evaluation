@@ -1,0 +1,68 @@
+{
+  "model": "Llama-3.1-8B Instruct",
+  "stem": "results_llama31_8b",
+  "domain": "swebench",
+  "n_total": 150,
+  "n_valid": 150,
+  "accuracy": 0.5066666666666667,
+  "accuracy_ci95": [
+    0.4266666666666667,
+    0.58
+  ],
+  "raw_ece": 0.20066666666666674,
+  "raw_ece_ci95": [
+    0.12800000000000003,
+    0.27534999999999993
+  ],
+  "raw_mce": 0.9,
+  "raw_brier": 0.27380000000000004,
+  "raw_brier_ci95": [
+    0.22466333333333335,
+    0.3235350000000001
+  ],
+  "calibration_methods": {
+    "temperature": {
+      "ece": 0.17576865736383873,
+      "brier": 0.2517279796594861,
+      "note": "5-fold out-of-sample, n=150"
+    },
+    "platt": {
+      "ece": 0.13174667349131375,
+      "brier": 0.2432185017310595,
+      "note": "5-fold out-of-sample, n=150"
+    },
+    "isotonic": {
+      "ece": 0.1371020670614151,
+      "brier": 0.23379367123079453,
+      "note": "5-fold out-of-sample, n=150"
+    }
+  },
+  "best_method": "platt",
+  "best_ece": 0.13174667349131375,
+  "confidence_distribution": {
+    "mean": 0.7979999999999998,
+    "std": 0.07955710737158142,
+    "min": 0.6,
+    "max": 1.0,
+    "iqr": 0.0,
+    "collapsed": true
+  },
+  "sharpness": 0.29800000000000004,
+  "auc_rc": 0.4725436210474841,
+  "gain_at_70pct": {
+    "coverage_level": 0.7,
+    "covered_accuracy": 0.4380952380952381,
+    "baseline_accuracy": 0.5066666666666667,
+    "gain": -0.06857142857142862,
+    "n_covered": 105
+  },
+  "oversight_precision_10pct": {
+    "flag_fraction": 0.1,
+    "n_flagged": 15,
+    "base_error_rate": 0.4933333333333333,
+    "flagged_error_rate": 0.1333333333333333,
+    "unflagged_error_rate": 0.5333333333333333,
+    "lift": 0.27027027027027023
+  },
+  "calibration_backend": "numpy/scipy/sklearn fallback"
+}
