@@ -9,18 +9,18 @@
 
 Three 2026 governance frameworks (Singapore IMDA, U.S. NIST/NCCoE, EU AI Act Arts. 14–15) require that AI agents support meaningful human oversight. A widely assumed implementation is **confidence-gating**: the agent flags any decision below a confidence threshold for human review.
 
-**We test whether that assumption holds across task types.** Two models, four domains, N = 2,004 decisions.
+**We test whether that assumption holds across task types.** Two models, four domains, N = 2,004 decisions. All findings below apply to the evaluated models and benchmarks; see Limitations.
 
 | Finding | Evidence |
 |---|---|
 | Confidence-gating **works** on structured QA | Lift 1.67–2.86 on GSM8K, MMLU, TruthfulQA |
-| Confidence-gating **fails** on open-ended agent tasks | Lift ≈ 1.0 on SWE-bench for both models |
+| Confidence-gating **fails** on the open-ended agent-style task tested | Lift ≈ 1.0 on SWE-bench for both models |
 | **Confidence collapses** — σ < 0.06 everywhere | Fixed thresholds cannot separate correct from incorrect |
 | Post-hoc calibration fixes aggregate ECE but **not** the gate | Platt: 70B ECE 0.201 → 0.015; lift unchanged |
 | Self-consistency (3 samples) raises SWE-bench lift to **2.06** | Preliminary, n = 110 |
 | Tamper-evident audit log detects both simulated insider attacks | Python standard library only |
 
-**Implication:** Governance requirements that mandate confidence-gating without specifying task type risk failing on the open-ended judgments where agents most commonly operate.
+**Implication (within this scope):** Governance requirements that mandate confidence-gating without specifying task type risk failing on the open-ended judgments where agents commonly operate.
 
 ---
 
@@ -119,20 +119,24 @@ See [experiments/results/PROVENANCE.md](experiments/results/PROVENANCE.md) for e
 - Two model families (Llama, Gemini); reasoning models not yet tested
 - Self-consistency comparison preliminary (n = 110, SWE-bench only)
 - Audit log uses HMAC; production requires Ed25519 + managed key rotation
-- EU AI Act operative timeline under active revision (Digital Omnibus)
+- EU AI Act high-risk (Annex III) obligations deferred to December 2027 under the 2026 Digital Omnibus amendments
 
 ## License
 
-MIT
+- **Code and data:** MIT (see [LICENSE](LICENSE))
+- **Paper text and figures** (`paper/`): CC BY 4.0
 
 ## Citation
 
 ```bibtex
-@techreport{mistry2026confidence,
-  title  = {Does Confidence-Gating Work? Empirical Evaluation of a Core AI Oversight Assumption},
-  author = {Mistry, Rushabh},
-  year   = {2026},
-  type   = {Technical Report / Preprint},
-  url    = {https://github.com/Rushhaabhhh/Calibrated-Oversight}
+@misc{mistry2026confidence,
+  title   = {Does Confidence-Gating Work? Empirical Evaluation of a Core AI Oversight Assumption},
+  author  = {Mistry, Rushabh},
+  year    = {2026},
+  month   = {7},
+  note    = {Preprint, version 1.0. Not peer reviewed.},
+  url     = {https://github.com/Rushhaabhhh/confidence-gating-evaluation}
 }
 ```
+
+A machine-readable citation is provided in [CITATION.cff](CITATION.cff). Once the Zenodo DOI is minted, cite the DOI version.

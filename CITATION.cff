@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying paper, please cite it as below."
+title: "Does Confidence-Gating Work? Empirical Evaluation of a Core AI Oversight Assumption"
+type: software
+authors:
+  - family-names: "Mistry"
+    given-names: "Rushabh"
+    email: "rushabhmistry16@gmail.com"
+    orcid: "https://orcid.org/0009-0001-0568-3993"
+    affiliation: "Independent Researcher"
+version: "1.0.0"
+date-released: "2026-07-11"
+license: MIT
+repository-code: "https://github.com/Rushhaabhhh/confidence-gating-evaluation"
+keywords:
+  - AI governance
+  - human oversight
+  - confidence calibration
+  - selective prediction
+  - AI agents
+  - audit trails
+  - EU AI Act
+abstract: >-
+  Empirical evaluation of confidence-gating as a human-oversight mechanism for
+  autonomous AI agents, tested against the oversight assumptions of three 2026
+  governance frameworks (Singapore IMDA, U.S. NIST/NCCoE, EU AI Act Articles
+  14-15). Two models (Llama 3.3 70B, Gemini 2.5 Flash), four domains
+  (SWE-bench Verified, GSM8K, MMLU, TruthfulQA), N = 2,004 decisions. Includes
+  a tamper-evident HMAC-signed audit-log prototype and full reproducibility
+  scripts. Paper text and figures in paper/ are licensed CC BY 4.0.
+preferred-citation:
+  type: report
+  title: "Does Confidence-Gating Work? Empirical Evaluation of a Core AI Oversight Assumption"
+  authors:
+    - family-names: "Mistry"
+      given-names: "Rushabh"
+      orcid: "https://orcid.org/0009-0001-0568-3993"
+  year: 2026
+  month: 7
+  notes: "Preprint, version 1.0. Not peer reviewed."
+  url: "https://github.com/Rushhaabhhh/confidence-gating-evaluation"
